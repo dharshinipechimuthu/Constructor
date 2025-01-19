@@ -1,0 +1,38 @@
+# Constructor
+class Book {
+    String title;
+    String author;
+    double price;
+    public Book(String title, String author, double price) {
+        this.title = title;
+        this.author = author;
+        this.price = price;
+{
+    public void displayDetails() {
+        System.out.println("Book Title: " + title);
+        System.out.println("Author: " + author);
+        System.out.println("Price: ₹" + price);
+    }
+}
+
+public class BookDemo {
+    public static void main(String[] args) {
+        Book book1 = new Book("Java Programming", "John Doe", 499.99);
+        System.out.println("--- Book Details ---");
+        book1.displayDetails();
+        Book book2 = new Book("Python Basics", "Jane Smith", 399.99);
+        System.out.println("\n--- Book Details ---");
+        book2.displayDetails();
+    }
+}
+ Output:
+
+--- Book Details ---
+Book Title: Java Programming
+Author: John Doe
+Price: ₹499.99
+
+--- Book Details ---
+Book Title: Python Basics
+Author: Jane Smith
+Price: ₹399.99
